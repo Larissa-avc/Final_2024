@@ -40,7 +40,7 @@ barchartGC(~infected + sex,data=FinalData, type="percent")
 
 ```
 
-Barchart shows that those 
+Barchart shows that 
 
 ## Males
 
