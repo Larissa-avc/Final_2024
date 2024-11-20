@@ -80,6 +80,7 @@ fisher.test(table1)
 
 ## Druggies
 
+## Graphical results
 ```{r}
 barchartGC(~DrugUser + treatment,data=FinalData)
 barchartGC(~DrugUser + treatment,data=FinalData, type="percent")
@@ -94,4 +95,13 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+
+## Inferential
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
 # Overall Results and Conclusions
+
