@@ -35,8 +35,8 @@ The helper files used is cat~ cat because both vaccine and sub population are bo
 ## Graphical results
 
 ```{r}
-barchartGC(~infected + sex,data=FinalData)
-barchartGC(~infected + sex,data=FinalData, type="percent")
+barchartGC(~sex + treatment,data=FinalData)
+barchartGC(~sex + treatment,data=FinalData, type="percent")
 
 ```
 
@@ -50,9 +50,48 @@ Barchart shows that
 
 ## LGBTQ
 
+## Graphical results
 
+```{r}
+barchartGC(~LGBTQ + treatment,data=FinalData)
+barchartGC(~LGBTQ + treatment,data=FinalData, type="percent")
+
+```
+
+
+
+### Numerical Summaries  
+
+```{r}
+table1 <- xtabs(~LGBTQ + treatment, data=FinalData)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
+## Inferential  
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 ## Druggies
 
+```{r}
+barchartGC(~DrugUser + treatment,data=FinalData)
+barchartGC(~DrugUser + treatment,data=FinalData, type="percent")
+
+```
+
+### Numerical Summaries  
+
+```{r}
+table1 <- xtabs(~DrugUser + treatment, data=FinalData)
+rowPerc(table1)
+colPerc(table1)
+```
 
 # Overall Results and Conclusions
