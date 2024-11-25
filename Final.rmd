@@ -109,6 +109,20 @@ colPerc(table1)
 
 The numerical data shows within the placebo group 64.93% of females were infected with covid 921. While the females who received the vaccine only 35.07% contracted covid 921. Therefore this indicates that the females who received the vaccine significantly reduced the risk of contracting covid 921.
 
+## Inferential  
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The Chi Square test shows that the p value is 0.00000001914 and the Fisher exact test shows that the p value is 0.00000001246 which is lower than 0.05 so we reject the null hypothesis.
+
+## Conclusion
+
+The bar chart shows females that received the vaccine are less likely to contract covid 921. The numerical data shows within the placebo group 64.93% of females got infected with covid 921. While the females who received the vaccine only 35.07% contracted covid 921. Therefore the females who received the vaccine significantly reduced the risk of contracting covid 921. The Fisher exact test shows that the p value is 0.00000001912 which is lower than 0.05 so we reject the null hypothesis. 
+
 ## LGBTQ
 
 ## Graphical results
