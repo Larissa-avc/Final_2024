@@ -26,27 +26,68 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ##Methods
 
-$H_0$: The vaccine does not exhibit a difference in effectiveness across a variety of sub population such as gender, drug use or sexual orientation.
+$H_0$: The vaccine is not effective in preventing Covid 921 in males
 
-$H_A$: The vaccine does exhibit a difference in effective effectiveness across a variety of sub population such as gender, drug use or sexual orientation.
+$H_A$: The vaccine effective in preventing Covid 921 in males.
 
-The helper files used is cat~ cat because both vaccine and sub population are both categorical.
+The helper file used is cat~ cat.
+
+## Males
 
 ## Graphical results
 
 ```{r}
-barchartGC(~sex + treatment,data=FinalData)
-barchartGC(~sex + treatment,data=FinalData, type="percent")
+Male <- FinalData[FinalData$sex=="M",]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=Male)
+barchartGC(~infected + treatment,data=Male, type="percent")
 
 ```
 
-Barchart shows that 
 
-## Males
+### Numerical Summaries  
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Male)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+## Inferential  
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 ## Females
 
+## Graphical results
+
+```{r}
+Female <-FinalDat[FinalDat$sex=="F",]
+```
+
+
+```{r}
+barchartGC(~infected + treatment,data=Female)
+barchartGC(~infected + treatment,data=Female, type="percent")
+
+```
+
+
+### Numerical Summaries  
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Female)
+rowPerc(table1)
+colPerc(table1)
+```
 
 ## LGBTQ
 
