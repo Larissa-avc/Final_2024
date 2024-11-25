@@ -138,8 +138,13 @@ The helper file used is cat~cat
 ## Graphical results
 
 ```{r}
-barchartGC(~infected + treatment,data=FinalData)
-barchartGC(~infected + treatment,data=FinalData, type="percent")
+LGBTQ <- FinalDat[FinalDat$LGBTQ=='gay',]
+```
+
+
+```{r}
+barchartGC(~infected + treatment,data= LGBTQ)
+barchartGC(~infected + treatment,data= LGBTQ, type="percent")
 
 ```
 
@@ -148,12 +153,12 @@ The bar chart shows that the LGBTQ community are less likely to contract covid 9
 ### Numerical Summaries  
 
 ```{r}
-table1 <- xtabs(~LGBTQ + treatment, data=FinalData)
+table1 <- xtabs(~infected + treatment, data=LGBTQ)
 rowPerc(table1)
 colPerc(table1)
 ```
 
-
+The numerical data shows that within the placebo group 80% of the LGBTQ community got infected with covid 921. While the LGBTQ community that received the vaccine only 20% contracted covid 921.
 
 ## Inferential  
 
@@ -162,6 +167,8 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+
+
 
 ## Druggies
 
