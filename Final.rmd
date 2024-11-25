@@ -46,6 +46,7 @@ barchartGC(~infected + treatment,data=Male, type="percent")
 
 ```
 
+The barchart shows that males who recieved the vaccine are less likely to contact covid 921
 
 ### Numerical Summaries  
 
@@ -55,6 +56,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+the numerical data shows that within the placebo group 73.80% of males are infected with covid 921. While the males who received the vaccine only 26.20% contracted covid 921. Therefore the males who received the vaccine reduced the risk of contracting covid 921.
 
 ## Inferential  
 
