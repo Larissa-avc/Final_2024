@@ -125,6 +125,16 @@ The bar chart shows females that received the vaccine are less likely to contrac
 
 ## LGBTQ
 
+How effective is the vaccine on LGBTQ?
+
+## Method 
+
+$H_0$: The vaccine is not effective in preventing covid 921 in LGBTQ
+
+$H_A$: The vaccine is effective in preventing covid 921 in LGBTQ
+
+The helper file used is cat~cat
+
 ## Graphical results
 
 ```{r}
