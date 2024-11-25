@@ -168,7 +168,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The Chi square test p value is 0.000002266 and the Fisher exact test p value is 0.0000007269. Which is lower than 0.05 so we reject the null hypothesis.
 
+##Conclusion
+
+The bar chart shows LGBTQ are less likely to contract covid 921 if you received the vaccine.The numerical data shows that within the placebo group 80% of LGBTQ got infected with covid 921. While the LGBTQ who received the vaccine only 20% contracted covid 921. The fisher exact test shows the p value is 0.0000007269 which is lower than 0.05 so we reject the null hypothesis. 
 
 ## Druggies
 
