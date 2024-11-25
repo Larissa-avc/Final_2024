@@ -176,10 +176,20 @@ The bar chart shows LGBTQ are less likely to contract covid 921 if you received 
 
 ## Druggies
 
+How effective is the vaccine in Druggies?
+
+##Method
+
+$H_0$: The vaccine is not effective in preventing covid 921 in Druggies 
+
+$H_A$: The vaccine is effective in preventing covid 921 in Druggies
+
+The helper file used it cat~cat
+
 ## Graphical results
 ```{r}
-barchartGC(~DrugUser + treatment,data=FinalData)
-barchartGC(~DrugUser + treatment,data=FinalData, type="percent")
+barchartGC(~infected + treatment,data= FinalData)
+barchartGC(~infected + treatment,data= FinalData, type="percent")
 
 ```
 
