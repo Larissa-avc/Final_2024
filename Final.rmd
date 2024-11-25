@@ -74,6 +74,16 @@ The bar chart shows you are less likely to contract covid 921 if you received th
 
 ## Females
 
+how effective is the vaccine on females?
+
+## Method
+
+$H_0$: The vaccine is not effective in preventing covid 921 in females
+
+$H_A$: The vaccine is effective in preventing covid 921 in females
+
+The helper file used is cat~cat
+
 ## Graphical results
 
 ```{r}
@@ -87,6 +97,7 @@ barchartGC(~infected + treatment,data=Female, type="percent")
 
 ```
 
+The bar chart shows females that received the vaccines are less likely to contract covid 921
 
 ### Numerical Summaries  
 
@@ -95,6 +106,8 @@ table1 <- xtabs(~infected + treatment, data=Female)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+
 
 ## LGBTQ
 
