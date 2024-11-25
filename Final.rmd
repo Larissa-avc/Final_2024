@@ -107,7 +107,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-
+The numerical data shows within the placebo group 64.93% of females were infected with covid 921. While the females who received the vaccine only 35.07% contracted covid 921. Therefore this indicates that the females who received the vaccine significantly reduced the risk of contracting covid 921.
 
 ## LGBTQ
 
