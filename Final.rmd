@@ -66,6 +66,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The Chi Square p value is 0.00000000000000022. Fisher exact test shows the p value is 0.00000000000000022 which is lower than 0.05 so we reject the null hypothesis.
+
+## Conclusion
+
+The bar chart shows you are less likely to contract covid 921 if you received the vaccine. The numerical data shows within the placebo 73.80% of males were infected while the males who received the vaccine only 26.20% contracted covid 921. Therefore this indicates that those how received the vaccine significantly reduced the risk of contracting covid 921. The fisher exact test shows the p value is 0.00000000000000022 which is lower than 0.05 so we reject the null hypothesis.
 
 ## Females
 
