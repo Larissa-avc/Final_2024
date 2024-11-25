@@ -138,12 +138,12 @@ The helper file used is cat~cat
 ## Graphical results
 
 ```{r}
-barchartGC(~LGBTQ + treatment,data=FinalData)
-barchartGC(~LGBTQ + treatment,data=FinalData, type="percent")
+barchartGC(~infected + treatment,data=FinalData)
+barchartGC(~infected + treatment,data=FinalData, type="percent")
 
 ```
 
-
+The bar chart shows that the LGBTQ community are less likely to contract covid 921 if you received the vaccine. 
 
 ### Numerical Summaries  
 
