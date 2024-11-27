@@ -217,5 +217,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+The Chi square test shows a p value of 0.0000000001414 data and the fisher exact test shows that the p value is 0.000000000003261 which is significantly lower than 0.05 so we reject the null hypthesis. 
+
 # Overall Results and Conclusions
 
