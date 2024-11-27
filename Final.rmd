@@ -180,27 +180,35 @@ How effective is the vaccine in Druggies?
 
 ##Method
 
-$H_0$: The vaccine is not effective in preventing covid 921 in Druggies 
+$H_0$: The vaccine is not effective in preventing covid 921 in DrugUser? 
 
-$H_A$: The vaccine is effective in preventing covid 921 in Druggies
+$H_A$: The vaccine is effective in preventing covid 921 in DrugUsers?
 
 The helper file used it cat~cat
 
 ## Graphical results
+
 ```{r}
-barchartGC(~infected + treatment,data= FinalData)
-barchartGC(~infected + treatment,data= FinalData, type="percent")
+DrugUser <- FinalDat[FinalDat$DrugUser=='yes',]
+```
+
+```{r}
+barchartGC(~infected + treatment,data= DrugUser)
+barchartGC(~infected + treatment,data= DrugUser, type="percent")
 
 ```
+
+The barchart shows that you are more likely to get covid921 if you received the vaccine as a drug user.
 
 ### Numerical Summaries  
 
 ```{r}
-table1 <- xtabs(~DrugUser + treatment, data=FinalData)
+table1 <- xtabs(~infected + treatment, data=DrugUser)
 rowPerc(table1)
 colPerc(table1)
 ```
 
+The numerical data shows the results in percentages. Within the placebo group 8.33% of individuals were infected with covid921. While in the vaccine group 91.67% contracted covid921. This shows that recieving the vaccine as a drug user significantly increases the risk of contracted covid921.
 
 ## Inferential
 ```{r}
