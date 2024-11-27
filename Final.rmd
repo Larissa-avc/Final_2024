@@ -219,5 +219,10 @@ fisher.test(table1)
 
 The Chi square test shows a p value of 0.0000000001414 data and the fisher exact test shows that the p value is 0.000000000003261 which is significantly lower than 0.05 so we reject the null hypthesis. 
 
+##Conclusion
+
+The bar chart shows that you are more likely to contract covid 921m if you did receieve the vaccine as a drug user. The numerical data shows the results in percentages. Within the placebo group 8.33% if individuals got infected with covid 921. While in the vaccine group 91.67% contracted covid921. This indicates that receiving the vaccine as a drug user significantly increases the risk of contracted covid 921. The inferential data shows a chi square p value of 0.0000000001414 and the dad includes the fisher exact test with the p value being 0.000000000003261 which is significantly lower than 0.05 which means we reject the null hypothesis. Which shows that as a drug user you are far more likely to contract covid 921 if you recieved the vaccine. 
+
 # Overall Results and Conclusions
 
+Overall, the data shows that receiving the vaccine will have a better effect on the person receiving it. The dad clearly shows that receiving the vaccien is generally effective in preventing the contractionof covid 921 if you are male, female, or LGBTQ. However it is the opposite for a drug user. According to the data you are higher at risk of contracting covid921 if you are a drug user. 
